@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpendSafely — Data Deletion</title>
+<style>
+  :root {
+    --bg: #FAFAF8; --ink: #1C1C1A; --mute: #5C5F5D; --accent: #1D553D;
+    --card: #FFFFFF; --line: #E4E7E4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141613; --ink: #ECEEEA; --mute: #A6ABA6; --accent: #7DC5A2;
+            --card: #1C1F1B; --line: #2A2E29; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.5px; }
+  .meta { color: var(--mute); margin-bottom: 36px; font-size: 15px; }
+  h2 { font-size: 21px; margin: 36px 0 10px; color: var(--accent); }
+  p, li { margin: 0 0 14px; }
+  ol li { margin-bottom: 10px; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0 16px; }
+  th, td { text-align: left; padding: 10px 12px; border: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--card); }
+  strong { font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Data Deletion</h1>
+  <p class="meta">How to request deletion of your data in <strong>SpendSafely</strong> (com.polapps.spendsafely), developed by Herman Politov · Contact: <a href="mailto:phstories0@gmail.com">phstories0@gmail.com</a></p>
+
+  <h2>How to request deletion</h2>
+  <ol>
+    <li>Send an email to <a href="mailto:phstories0@gmail.com?subject=SpendSafely%20data%20deletion%20request"><strong>phstories0@gmail.com</strong></a> with the subject <strong>"SpendSafely data deletion request"</strong>.</li>
+    <li>If you made a Pro purchase, mention the approximate purchase date so we can locate the pseudonymous purchase record.</li>
+    <li>We will confirm the deletion by reply within <strong>30 days</strong> (usually much sooner).</li>
+  </ol>
+
+  <h2>What is deleted, what is kept, and for how long</h2>
+  <table>
+    <tr><th>Data</th><th>Where it lives</th><th>What happens</th></tr>
+    <tr>
+      <td>Transactions, categories, notes, settings, display name</td>
+      <td>Only on your device</td>
+      <td>Never held by us. Delete it yourself at any time by uninstalling the app or using Android's "Clear data". Backups/exports you created are files under your control — delete them where you saved them.</td>
+    </tr>
+    <tr>
+      <td>Pseudonymous purchase record (app user ID, device type, purchase history)</td>
+      <td>RevenueCat (our purchase-validation processor)</td>
+      <td>Deleted on request within <strong>30 days</strong>. No data remains with us afterwards.</td>
+    </tr>
+    <tr>
+      <td>Google Play payment records</td>
+      <td>Google Play</td>
+      <td>Managed by Google under its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>; we cannot delete these on Google's side.</td>
+    </tr>
+  </table>
+
+  <p>SpendSafely collects nothing else — no accounts, no analytics, no advertising identifiers.
+  See the full <a href="https://german2010.github.io/spendsafely-privacy/">Privacy Policy</a>.</p>
+</main>
+</body>
+</html>
