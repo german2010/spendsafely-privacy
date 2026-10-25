@@ -39,7 +39,8 @@
   <h2>How to request deletion</h2>
   <ol>
     <li>Send an email to <a href="mailto:phstories0@gmail.com?subject=SpendSafely%20data%20deletion%20request"><strong>phstories0@gmail.com</strong></a> with the subject <strong>"SpendSafely data deletion request"</strong>.</li>
-    <li>If you made a Pro purchase, mention the approximate purchase date so we can locate the pseudonymous purchase record.</li>
+    <li>If you made a Pro purchase, include its <strong>Google Play order number</strong> (it starts with <strong>GPA.</strong>). You'll find it in the receipt email from Google Play, or in the Play Store app under Payments &amp; subscriptions → Budget &amp; history. We use it to find the pseudonymous purchase record; without it we cannot tell which record is yours.</li>
+    <li>Uninstall SpendSafely before you send the request. If the app stays installed, Google Play hands your purchase back to it on its next start, and a new purchase record is created.</li>
     <li>We will confirm the deletion by reply within <strong>30 days</strong> (usually much sooner).</li>
   </ol>
 
@@ -47,7 +48,7 @@
   <table>
     <tr><th>Data</th><th>Where it lives</th><th>What happens</th></tr>
     <tr>
-      <td>Transactions, categories, notes, settings, display name</td>
+      <td>Transactions (including shops recorded by Google Pay sync), categories, notes, settings, display name</td>
       <td>Only on your device</td>
       <td>Never held by us. Delete it yourself at any time by uninstalling the app or using Android's "Clear data". Backups/exports you created are files under your control — delete them where you saved them.</td>
     </tr>
@@ -55,6 +56,11 @@
       <td>Pseudonymous purchase record (app user ID, device type, purchase history)</td>
       <td>RevenueCat (our purchase-validation processor)</td>
       <td>Deleted on request within <strong>30 days</strong>. No data remains with us afterwards.</td>
+    </tr>
+    <tr>
+      <td>Pseudonymous app record without a purchase (random app user ID, device type, app version)</td>
+      <td>RevenueCat</td>
+      <td>Created when the app first starts, even if you never buy Pro. It holds no name, email or financial data and nothing links it to you, so we cannot find it on request. Once you uninstall the app, nothing on your phone points to it any more.</td>
     </tr>
     <tr>
       <td>Google Play payment records</td>
