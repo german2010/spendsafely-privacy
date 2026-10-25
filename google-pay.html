@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpendSafely — Google Pay sync</title>
+<meta name="description" content="How to turn on Google Pay sync in SpendSafely Pro, what happens after a purchase, and why a purchase may be missing.">
+<style>
+  :root {
+    --bg: #FAFAF8; --ink: #1C1C1A; --mute: #5C5F5D; --accent: #1D553D;
+    --card: #FFFFFF; --line: #E4E7E4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141613; --ink: #ECEEEA; --mute: #A6ABA6; --accent: #7DC5A2;
+            --card: #1C1F1B; --line: #2A2E29; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.5px; }
+  .meta { color: var(--mute); margin-bottom: 36px; font-size: 15px; }
+  h2 { font-size: 21px; margin: 40px 0 10px; color: var(--accent); }
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p, li { margin: 0 0 14px; }
+  ol li, ul li { margin-bottom: 10px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  figure { margin: 18px 0 26px; }
+  figure img {
+    display: block; width: 100%; max-width: 360px; height: auto;
+    border: 1px solid var(--line); border-radius: 14px; background: var(--card);
+  }
+  figcaption { color: var(--mute); font-size: 15px; margin-top: 8px; max-width: 360px; }
+  .note { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Google Pay sync</h1>
+  <p class="meta"><strong>SpendSafely Pro</strong> · Android · Contact: <a href="mailto:phstories0@gmail.com">phstories0@gmail.com</a></p>
+
+  <p>Pay with Google Pay on this phone, and SpendSafely records the purchase for you. It reads
+  the shop and the amount from Google Wallet's purchase notification. Everything stays on your phone.</p>
+
+  <h2>Before you start</h2>
+  <ul>
+    <li>SpendSafely Pro is active.</li>
+    <li>You pay with this phone through Google Wallet.</li>
+    <li>Google Wallet's purchase notifications are on.</li>
+  </ul>
+
+  <h2>Turn it on</h2>
+  <ol>
+    <li><strong>Profile</strong> → turn on <strong>Google Pay</strong>.</li>
+  </ol>
+  <figure>
+    <img src="img/google-pay/profile.png" alt="Profile settings list with the Google Pay switch: Record payments made with your phone" width="720" height="603" loading="lazy">
+  </figure>
+  <ol start="2">
+    <li>Tap <strong>Continue</strong>.</li>
+  </ol>
+  <figure>
+    <img src="img/google-pay/setup.png" alt="Setup screen: SpendSafely will read only Google Wallet purchase notifications, the shop and the amount" width="720" height="685" loading="lazy">
+  </figure>
+  <ol start="3">
+    <li>Tap <strong>Allow</strong> next to <strong>Notification access</strong> (required).</li>
+  </ol>
+  <figure>
+    <img src="img/google-pay/steps.png" alt="Three steps: notification access, SpendSafely notifications, battery unrestricted, each with an Allow or Open button" width="720" height="1245" loading="lazy">
+  </figure>
+  <ol start="4">
+    <li>In Android's settings, turn on <strong>Allow notification access</strong> (this screen differs a little between phone makers).</li>
+  </ol>
+  <figure>
+    <img src="img/google-pay/access-list.png" alt="Android settings: Device and app notifications, SpendSafely, with the Allow notification access switch off" width="720" height="745" loading="lazy">
+  </figure>
+  <ol start="5">
+    <li>Tap <strong>Allow</strong>, then go back to SpendSafely.</li>
+  </ol>
+  <figure>
+    <img src="img/google-pay/access-dialog.png" alt="Android dialog: Allow notification access for SpendSafely?" width="720" height="1133" loading="lazy">
+    <figcaption>Android shows this warning for every app with notification access. SpendSafely reads only Google Wallet purchase notifications and skips the rest unread.</figcaption>
+  </figure>
+  <ol start="6">
+    <li>Tap <strong>Allow</strong> next to <strong>SpendSafely notifications</strong>, then <strong>Allow</strong> again. The app uses them to tell you about a new shop or a payment it can't record by itself. <strong>Battery: unrestricted</strong> is optional; it helps on Samsung and Xiaomi.</li>
+  </ol>
+  <figure>
+    <img src="img/google-pay/notify-permission.png" alt="Android prompt: Allow SpendSafely to send you notifications? Allow or Don't allow" width="720" height="487" loading="lazy">
+  </figure>
+  <ol start="7">
+    <li>Tap <strong>Turn on</strong>.</li>
+  </ol>
+  <figure>
+    <img src="img/google-pay/steps-done.png" alt="Notification access and SpendSafely notifications done, and the Turn on button" width="720" height="1245" loading="lazy">
+  </figure>
+
+  <h2>After a purchase</h2>
+  <ul>
+    <li><strong>New shop:</strong> recorded under <strong>Others</strong>. Tap the notification to pick a category.</li>
+  </ul>
+  <figure>
+    <img src="img/google-pay/recorded.png" alt="Notification: Recorded $6.40 · Corner Bakery. Category: Others. Tap to change it." width="720" height="347" loading="lazy">
+  </figure>
+  <ul>
+    <li><strong>Known shop:</strong> recorded quietly with its last category (still Others if you never changed it). Shops starting with the same word share it, e.g. every “MCDONALDS …”.</li>
+    <li><strong>Amount shown as 0, or another currency:</strong> nothing is guessed. The payment waits on <strong>Home</strong> until you enter what you were charged.</li>
+  </ul>
+  <figure>
+    <img src="img/google-pay/home-waiting.png" alt="Home screen with the line: 2 payments waiting for an amount, and an Add button" width="720" height="1045" loading="lazy">
+  </figure>
+  <figure>
+    <img src="img/google-pay/enter-amount.png" alt="Add transaction: Enter what was charged, in $, with the shop and the original amount in euros in the note" width="720" height="879" loading="lazy">
+  </figure>
+
+  <h2>Why a purchase is missing</h2>
+  <ul>
+    <li>Google Wallet showed no notification for it (common at fuel pumps and some terminals). Check Wallet's history.</li>
+    <li>You paid with the card, not the phone.</li>
+    <li>Sync was off or Pro wasn't active at the time. Those purchases aren't added later; add them by hand.</li>
+    <li>Notification access was removed. Profile shows <em>“No access to notifications — tap to allow”</em>.</li>
+    <li>Google Wallet's notifications are off.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Only Google Wallet purchase notifications are read, and only the shop and amount. Nothing is logged
+  or sent anywhere. When sync is off or Pro isn't active, the app doesn't listen at all.
+  <a href="./">Privacy Policy</a></p>
+
+  <h2>Turn it off</h2>
+  <p>Profile → turn off <strong>Google Pay</strong>. To also remove the access, go to Android
+  <strong>Settings → Notifications → Device &amp; app notifications → SpendSafely</strong> (names differ by phone maker).</p>
+</main>
+</body>
+</html>
