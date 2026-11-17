@@ -34,7 +34,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta"><strong>SpendSafely</strong> (com.polapps.spendsafely) · Effective 25 October 2026 · Contact: <a href="mailto:phstories0@gmail.com">phstories0@gmail.com</a></p>
+  <p class="meta"><strong>SpendSafely</strong> (com.polapps.spendsafely) · Effective 17 November 2026 · Contact: <a href="mailto:phstories0@gmail.com">phstories0@gmail.com</a></p>
 
   <p class="lead">SpendSafely is built to be private. Your financial records never leave
   your device unless you export them yourself. We do not collect, store, sell, or share
@@ -68,18 +68,29 @@
   included in backups and exports you make. When the feature is off, or Pro is not active, the
   app stops listening to notifications altogether.</p>
 
+  <h2>Exchange rates (SpendSafely Pro)</h2>
+  <p>To convert payments made in another currency, SpendSafely with Pro downloads a
+  <strong>public table of exchange rates</strong> from
+  <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">ExchangeRate-API</a>
+  once a day. The request is <strong>the same for every user</strong>: it asks for the rates of
+  all currencies against the US dollar and carries nothing about you, your currency, your
+  purchases, or your records. As with any download, the service sees your IP address and the time
+  of the request. The conversion itself happens on your device. Without Pro, nothing is
+  downloaded.</p>
+
   <h2>Purchases (SpendSafely Pro)</h2>
   <p>Optional Pro features are sold through <strong>Google Play Billing</strong>. To validate
   purchases we use <strong>RevenueCat</strong>, which processes a pseudonymous app user
-  identifier, device type, and purchase history on our behalf. This is the only network
-  feature of the app and the only reason it uses the Internet permission. See
+  identifier, device type, and purchase history on our behalf. Together with the exchange-rate
+  download above, this is the only reason the app uses the Internet permission. See
   <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's privacy policy</a>. Google Play's
   terms apply to the payment itself; SpendSafely never sees your payment details.</p>
 
   <h2>Data we collect</h2>
   <p>None, beyond the purchase processing described above. No accounts, no sign-ups, no
   analytics SDKs, no advertising identifiers, no location, no contacts. Notifications read for
-  Google Pay sync never leave your device.</p>
+  Google Pay sync never leave your device, and the exchange-rate download sends nothing about
+  you.</p>
 
   <h2>Children</h2>
   <p>SpendSafely does not knowingly collect any personal information from anyone, including
